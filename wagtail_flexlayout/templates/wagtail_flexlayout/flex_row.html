@@ -1,0 +1,7 @@
+<div style="display: flex; flex-flow: row;">
+    {% for block in self.flex_items %}
+    <div style="flex: {{ block.flex }};">
+        {{ block.content }}
+    </div>
+    {% endfor %}
+</div>
